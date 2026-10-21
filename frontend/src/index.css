@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Amiri', 'Scheherazade New', 'Noto Naskh Arabic', serif;
+}
+
+/* Sepia Theme */
+html.sepia, body.sepia, .sepia {
+  background-color: #f6eedb !important;
+  color: #44321e !important;
+}
+html.sepia body {
+  background-color: #f6eedb !important;
+}
+html.sepia .bg-white {
+  background-color: #fdf8ee !important;
+  border-color: #e8dcc4 !important;
+}
+html.sepia .bg-slate-50, html.sepia .bg-slate-100 {
+  background-color: #ede2c8 !important;
+}
+html.sepia .border-slate-200, html.sepia .border-slate-100 {
+  border-color: #e8dcc4 !important;
+}
+html.sepia .text-slate-900, html.sepia .text-slate-800 {
+  color: #382513 !important;
+}
+html.sepia .text-slate-700, html.sepia .text-slate-600, html.sepia .text-slate-500 {
+  color: #5c4328 !important;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #fdfbf7;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+  line-height: 2.3;
+}
+
+.font-arabic-center {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: center;
+  line-height: 2.3;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 78, 59, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 78, 59, 0.45);
+}
+
+/* Islamic Geometric Subtle Background Accent */
+.islamic-pattern {
+  background-image: radial-gradient(rgba(180, 83, 9, 0.08) 1px, transparent 0),
+                    radial-gradient(rgba(6, 78, 59, 0.06) 1px, transparent 0),
+                    linear-gradient(110deg, #022c22 0%, #064e3b 55%, #047857 100%);
+  background-position: 0 0, 16px 16px, 0 0;
+  background-size: 32px 32px, 32px 32px, 100% 100%;
+  background-repeat: repeat, repeat, no-repeat;
+}
+
+/* Tajweed Color Highlighting Classes */
+.tajweed-ghunnah { color: #d97706; font-weight: 600; }
+.tajweed-idgham { color: #0284c7; }
+.tajweed-iqlab { color: #059669; }
+.tajweed-madd { color: #dc2626; font-weight: 700; }
+.tajweed-qalqalah { color: #7c3aed; font-weight: 600; }

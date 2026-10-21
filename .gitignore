@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+test_noor_quran.db
+
+# Node dependencies
+frontend/node_modules/
+node_modules/
+npm-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

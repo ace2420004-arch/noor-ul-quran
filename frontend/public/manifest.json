@@ -1,0 +1,61 @@
+{
+  "name": "Noor-ul-Quran | نور القرآن",
+  "short_name": "Noor-ul-Quran",
+  "description": "Authentic Multilingual Quran Ecosystem, Tafsir, Audio Recitations, Islamic Maktabah, Hifz, Prayer Times, Qibla and Scholarly Research Studio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Read Noble Quran",
+      "short_name": "Read Quran",
+      "description": "Read the Holy Quran with Tajweed & Translations",
+      "url": "/#reader",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Grand Islamic Maktabah",
+      "short_name": "Library",
+      "description": "Classic Islamic books, Hadith, and Noorani Qaida",
+      "url": "/#maktabah",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Daily Spiritual Companion",
+      "short_name": "Prayers & Qibla",
+      "description": "Prayer times, Qibla compass, and Digital Tasbeeh",
+      "url": "/#companion",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tafsir Comparative Library",
+      "short_name": "Tafsir",
+      "description": "Comparative classical Tafsirs (Ibn Kathir, Jalalayn, Maududi)",
+      "url": "/#tafsir",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
